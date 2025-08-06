@@ -27,7 +27,7 @@ char	*heredoc_read_child(const char *delim, t_collector **collector)
 			break ;
 		if (heredoc_should_break(line, delim))
 			exit(0) ;
-		heredoc_updasdasdasdaste_vars(&heredoc, line, &total_len, collector);
+		heredoc_update_vars(&heredoc, line, &total_len, collector);
 		freer((void **)&line);
 	}
 	if (!heredoc)
